@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Which is better?</title>
+</head>
+<body>
+    <h1>Tie breaker</h1>
+
+    <form method="post">
+        {% for item in tied_items %}
+            <button type="submit" name="choice" value="{{ loop.index }}">
+                {{ loop.index }}. {{ item }}
+            </button>
+        {% endfor %}
+    </form>
+</body>
+</html>

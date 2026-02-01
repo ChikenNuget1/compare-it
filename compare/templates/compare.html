@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='compare.css') }}">
+</head>
+<body>
+    <h1>Which is better?</h1>
+
+    <div class="progress">Comparison {{ progress }}</div>
+
+    <form method="post" class="comparison">
+        <div>
+            <button type="submit" name="choice" value="1">{{ item1 }}</button>
+            <button type="submit" name="choice" value="2">{{ item2 }}</button>
+        </div>
+    </form>
+</body>
+</html>

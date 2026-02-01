@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Final Rankings</h1>
+
+    <ol class="ranking-list">
+        {% for item in ranking %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ol>
+
+<div class="restart">
+    <a href="/">Start over</a>
+</div>
+</body>
+</html>
